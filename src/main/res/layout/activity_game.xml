@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/tetrisView"
+            android:layout_width="240dp"
+
+            android:layout_height="360dp"
+            android:background="@color/colorLightSkyBlue"
+            android:horizontalSpacing="0dp"
+
+            android:numColumns="10"
+            android:verticalSpacing="0dp">
+            <!--水平垂直间距-->
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/nextTetrisView"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorLightSkyBlue"
+                android:numColumns="4">
+
+            </GridView>
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/score"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/maxScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/maxScore"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/left_move"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/left_move" />
+
+        <Button
+            android:id="@+id/rotate_move"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rotate_move" />
+
+        <Button
+            android:id="@+id/right_move"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/right_move" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/down_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/down_move" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pause_move" />
+</LinearLayout>
+
+
